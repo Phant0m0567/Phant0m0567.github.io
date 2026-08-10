@@ -1,84 +1,30 @@
-function atualizarPerfilDiscord(userId) {
-
-    const targetUserId = userId || '1431639858174103563';
-
-    fetch(`https://discorduserstatus-2-0.onrender.com/status/${targetUserId}`)
-    .then(response => response.json())
-    .then(data => {
-
-        const avatarImg = document.querySelector('.avatarImage');
-        if (avatarImg && data.avatarUrl) {
-
-            const avatarSrc = data.avatarUrl.includes('?') ? 
-                data.avatarUrl + '&t=' + Date.now() : 
-                data.avatarUrl + '?t=' + Date.now();
-            
-            avatarImg.src = avatarSrc;
-            console.log(`Avatar do usuário ${targetUserId} atualizado:`, avatarSrc);
-        }
-
-        const statusImg = document.querySelector('.discordStatus');
-        if (statusImg) {
-
-            switch(data.status) {
-                case 'online': statusImg.src = '/img/online.png'; break;
-                case 'idle': statusImg.src = '/img/idle.png'; break;
-                case 'dnd': statusImg.src = '/img/dnd.png'; break;
-                default: statusImg.src = '/img/offline.png';
+function atualizarPerfilDiscord() {
+    fetch('https://api.lanyard.rest/v1/users/1431639858174103563')
+        .then(response => response.json())
+        .then(payload => {
+            if (!payload || !payload.success || !payload.data) {
+                return;
             }
-            console.log(`Status do usuário ${targetUserId} atualizado para:`, data.status);
-        } else {
-            console.error('Elemento .discordStatus não encontrado no DOM');
-        }
 
-        const usernameElement = document.querySelector('.username');
-        if (usernameElement && data.username) {
-            usernameElement.textContent = data.username;
-        }
-    })
-    .catch(error => {
-        console.error('Erro ao buscar status:', error);
+            const data = payload.data;
+            const avatarImg = document.querySelector('.avatarImage');
 
-        const statusElement = document.querySelector('.status-debugging');
-        if (statusElement) {
-            statusElement.textContent = 'Erro ao conectar: ' + error.message;
-            statusElement.style.color = 'red';
-        }
-    });
-}
-
-function determinarUsuarioPagina() {
-
-
-
-    const currentPath = window.location.pathname;
-    if (currentPath.includes('meuperfil') || currentPath.includes('perfil2')) {
-
-        return '1431639858174103563';
-    }
-
-    return '1431639858174103563';
+            if (avatarImg && data.discord_user && data.discord_user.id && data.discord_user.avatar) {
+                const avatarUrl = `https://cdn.discordapp.com/avatars/${data.discord_user.id}/${data.discord_user.avatar}.png?size=512&t=${Date.now()}`;
+                avatarImg.src = avatarUrl;
+            }
+        })
+        .catch(() => {});
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-
-    const avatarImg = document.querySelector('.avatarImage');
-    if (avatarImg) {
-        avatarImg.src = '';
-    }
-
-    const userId = determinarUsuarioPagina();
-
-    atualizarPerfilDiscord(userId);
-
-    setInterval(() => atualizarPerfilDiscord(userId), 5000);
+    atualizarPerfilDiscord();
+    setInterval(atualizarPerfilDiscord, 5000);
 });
 
 const avatarImg = document.querySelector('.avatarImage');
 if (avatarImg) {
     avatarImg.addEventListener('click', function() {
-        console.log('Atualizando avatar manualmente...');
-        const userId = determinarUsuarioPagina();
-        atualizarPerfilDiscord(userId);
+        atualizarPerfilDiscord();
     });
 }
