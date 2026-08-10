@@ -35,7 +35,7 @@ function atualizarPerfilDiscord() {
             }
 
             if (usernameElement) {
-                usernameElement.textContent = '@Phant0m0565';
+                usernameElement.textContent = data.discord_user?.global_name || data.discord_user?.display_name || '@Phant0m0565';
             }
 
             if (presenceTextElement) {
