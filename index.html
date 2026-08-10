@@ -434,7 +434,7 @@ container.addEventListener('mouseenter', (e) => {
                 currentLink = this.getAttribute('href');
                 currentPlatform = this.getAttribute('data-type');
 
-                popupMessage.textContent = `Você será redirecionado para ${currentPlatform}. Deseja continuar?`;
+                popupMessage.textContent = `You will be redirected to ${currentPlatform}. Do you want to continue?`;
 
                 popup.classList.add('active');
             });
@@ -490,11 +490,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (playPromise !== undefined) {
             playPromise.catch(error => {
-                console.log('Autoplay do áudio de chuva bloqueado. Aguardando interação:', error);
+                console.log('Rain audio autoplay blocked. Waiting for interaction:', error);
 
                 const startRainAudio = function() {
                     rainAudio.play().catch(err => {
-                        console.log('Ainda não foi possível iniciar o áudio de chuva:', err);
+                        console.log('Still unable to start rain audio:', err);
                     });
 
                     document.removeEventListener('click', startRainAudio);

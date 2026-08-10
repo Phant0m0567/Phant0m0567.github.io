@@ -15,7 +15,7 @@ function criarLockscreen() {
 
   const clickText = document.createElement('div');
   clickText.classList.add('click-text');
-  clickText.innerHTML = '[ click to unlock ]';
+  clickText.innerHTML = 'click to enter...';
   clickText.style.willChange = 'opacity, transform';
 
   const pulseStyle = document.createElement('style');
