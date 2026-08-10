@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    const badges = document.querySelectorAll('.profileBadge');
+  const badges = document.querySelectorAll('.profileBadges > div.profileBadge');
 
     badges.forEach(badge => {
 
@@ -20,7 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
       else if (badge.classList.contains('og')) tooltipText = 'OG';
       else if (badge.classList.contains('sweet')) tooltipText = 'Candy';
       else if (badge.classList.contains('patrick')) tooltipText = 'St. Patrick';
-      
+
+      if (!tooltipText) {
+        return;
+      }
+
       tooltip.textContent = tooltipText;
       document.body.appendChild(tooltip);
 
