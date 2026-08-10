@@ -318,6 +318,7 @@ body {
     margin-right: 2px;
     font-style: italic;
     text-align: left;
+    line-height: 1.2;
 }
 
 .container .presenceWrapper .discordInfos .discordUserDiv {
@@ -334,7 +335,8 @@ body {
 .container .presenceWrapper .discordInfos .discordUserBadges {
     display: flex;
     align-items: center;
-    margin-left: 6px;
+    gap: 8px;
+    margin-left: 8px;
 }
 
 .container .presenceWrapper .discordInfos .discordUserBadges img {
