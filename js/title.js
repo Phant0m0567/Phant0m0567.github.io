@@ -1,5 +1,5 @@
 
-        const titleText = "@phant0m0565";
+        const titleText = "@nicoplayz53";
         let index = 0;
 
         function typeTitle() {
