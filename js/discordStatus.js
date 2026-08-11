@@ -1,5 +1,5 @@
 function atualizarPerfilDiscord() {
-    fetch('https://api.lanyard.rest/v1/users/1431639858174103563')
+    fetch('https://api.lanyard.rest/v1/users/1125199221092536421')
         .then(response => response.json())
         .then(payload => {
             if (!payload || !payload.success || !payload.data) {
