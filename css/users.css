@@ -952,6 +952,17 @@ body {
     transition: opacity 0s;
 }
 
+.container .profileLayout .profileBadges .profileBadge img {
+    width: 2rem !important;
+    height: 2rem !important;
+    min-width: 2rem !important;
+    min-height: 2rem !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: contain;
+    display: block;
+}
+
 .volume-slider:hover {
     opacity: 1;
 }
