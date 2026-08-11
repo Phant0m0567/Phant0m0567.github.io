@@ -952,15 +952,34 @@ body {
     transition: opacity 0s;
 }
 
+.container .profileLayout .profileBadges {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 12px;
+    width: fit-content;
+    height: auto;
+}
+
+.container .profileLayout .profileBadges .profileBadge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
 .container .profileLayout .profileBadges .profileBadge img {
-    width: 2rem !important;
-    height: 2rem !important;
-    min-width: 2rem !important;
-    min-height: 2rem !important;
-    max-width: none !important;
-    max-height: none !important;
-    object-fit: contain;
-    display: block;
+    display: block !important;
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
+    max-width: 40px !important;
+    max-height: 40px !important;
+    object-fit: contain !important;
 }
 
 .volume-slider:hover {
