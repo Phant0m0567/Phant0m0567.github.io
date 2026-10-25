@@ -26,6 +26,7 @@ function copyCode() {
           I own 2 proxies, and I own Global Unblocking², I also work as a developer for some other proxies too.<br>
           You can find some of my projects
           <RouterLink to="/projects">here.</RouterLink><br />
+          You can also join my server (please do) <a href="https://discord.gg/bMeRzKXT5r" target="_blank">here.</a>
         </p>
       </div>
     </div>
@@ -34,9 +35,9 @@ function copyCode() {
       <div class="box-content">
         <p class="subtitle">put this on your site please</p>
         <div class="button-row">
-        <img src="/88x31.gif" alt="phant0m0567.github.io" class="web-badge button-preview" />
+        <img src="/88x31.gif" alt="phant0m0565.pages.dev" class="web-badge button-preview" />
         <div class="btn-code">
-          <code class="mono"><span class="hl-tag">&lt;a</span> <span class="hl-attr">href</span>=<span class="hl-str">"https://phant0m0567.github.io/"</span> <span class="hl-attr">target</span>=<span class="hl-str">"_blank"</span><span class="hl-tag">&gt;</span><span class="hl-tag">&lt;img</span> <span class="hl-attr">src</span>=<span class="hl-str">"https://phant0m0567.github.io/88x31.gif"</span> <span class="hl-attr">alt</span>=<span class="hl-str">"phant0m0567.github.io"</span> <span class="hl-tag">/&gt;</span><span class="hl-tag">&lt;/a&gt;</span></code>
+          <code class="mono"><span class="hl-tag">&lt;a</span> <span class="hl-attr">href</span>=<span class="hl-str">"https://phant0m0565.pages.dev/"</span> <span class="hl-attr">target</span>=<span class="hl-str">"_blank"</span><span class="hl-tag">&gt;</span><span class="hl-tag">&lt;img</span> <span class="hl-attr">src</span>=<span class="hl-str">"https://phant0m0565.pages.dev/88x31.gif"</span> <span class="hl-attr">alt</span>=<span class="hl-str">"phant0m0565.pages.dev"</span> <span class="hl-tag">/&gt;</span><span class="hl-tag">&lt;/a&gt;</span></code>
           <button class="copy" @click="copyCode">
             <icon-lucide-check v-if="copied" />
             <icon-lucide-copy v-else />

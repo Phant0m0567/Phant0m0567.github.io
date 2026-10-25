@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ParticleBackground from '@/components/ParticleBackground.vue';
+import CustomCursors from '@/components/CustomCursors.vue';
 import { RouterView } from 'vue-router';
 import NavBar from "@/components/NavBar.vue";
 import { Neko, NekoSizeVariations } from "neko-ts";
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <template>
   <main class="app-container">
+    <CustomCursors />
     <div class="primary-container">
       <NavBar />
       <RouterView v-slot="{ Component }">
