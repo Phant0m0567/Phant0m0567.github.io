@@ -11,6 +11,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    CustomCursors: typeof import('./components/CustomCursors.vue')['default']
     IconLucideArrowLeft: typeof import('~icons/lucide/arrow-left')['default']
     IconLucideArrowRight: typeof import('~icons/lucide/arrow-right')['default']
     IconLucideCheck: typeof import('~icons/lucide/check')['default']

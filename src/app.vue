@@ -9,7 +9,7 @@ import { Neko, NekoSizeVariations } from "neko-ts";
   setTimeout(function () {
     titleScroller(text.substr(1) + text.substr(0, 1));
   }, 500);
-}(   "Phant0m's Bio "));
+}(   "Phant0m's Bio  "));
 
 let neko: Neko | null = null;
 document.addEventListener("DOMContentLoaded", () => {
