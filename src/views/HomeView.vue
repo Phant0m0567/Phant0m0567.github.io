@@ -1,24 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
-import dayjs from "dayjs";
 
-const startDate = dayjs("2011-7-21");
-const yearsSince = ref("0.000000000");
-
-function updateDate() {
-  const now = dayjs();
-  yearsSince.value = now.diff(startDate, "year", true).toFixed(9);
-}
-let interval: any;
-
-onMounted(() => {
-  updateDate();
-  interval = setInterval(updateDate, 50);
-});
-
-onUnmounted(() => {
-  clearInterval(interval);
-});
 
 const embedCode = `<a href="https://phant0m0567.github.io/" target="_blank"><img src="https://phant0m0567.github.io/88x31.gif" alt="phant0m0567.github.io" /></a>`
 const copied = ref(false)
@@ -37,7 +19,7 @@ function copyCode() {
       <div class="box-content">
         <h1>hi, i'm Phant0m</h1>
         <p>
-          I'm a <span class="mono age">{{ yearsSince }}</span> y/o frontend developer
+          I'm a frontend developer
           from the United States.<br />
           I primarily work in the UBG community, and I'm decently known.<br />
           I use MacOS Tahoe as my primary operating system, my favorite language is CSS, aswell as HTML and JS.<br />
@@ -146,8 +128,6 @@ function copyCode() {
   height: 31px;
   image-rendering: pixelated;
 }
-
-
 
 .hl-tag {
   color: #e06c75;
@@ -266,10 +246,6 @@ function copyCode() {
   text-decoration: underline;
 }
 
-.age {
-  font-variant-numeric: tabular-nums;
-  color: #b99aff;
-}
 
 section {
   display: flex;
