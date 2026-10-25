@@ -8,7 +8,7 @@ import { RouterLink } from 'vue-router'
     <img src="/biglogo.webp" alt="logo" class="logo"/>
   </RouterLink>
   <div class="nav-items">
-    <RouterLink to="/" class="nav-item mono">/home</RouterLink>
+    <RouterLink to="/" class="nav-item mono">/~</RouterLink>
     <RouterLink to="/projects" class="nav-item mono">/projects</RouterLink>
     <RouterLink to="/contact" class="nav-item mono">/contact</RouterLink>
   </div>
