@@ -4,7 +4,7 @@
   },
   "fullScreen": { "enable": true, "zIndex": 0 },
   "detectRetina": true,
-  "fpsLimit": 60,
+  "fpsLimit": 120,
   "interactivity": {
     "events": {
       "onClick": { "enable": false },
@@ -25,13 +25,13 @@
     },
     "number": {
       "density": { "enable": true },
-      "value": 200
+      "value": 500
     },
     "opacity": {
       "value": { "min": 0.1, "max": 0.4 },
       "animation": {
         "enable": true,
-        "speed": 1.5,
+        "speed": 1.75,
         "sync": false
       }
     },
