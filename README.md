@@ -1,4 +1,3 @@
-# Phant0m0567.github.io
-my portfolio with my various contacts and discord lanyard thing
-
-no ai used cuz im not a skiddy \*cough cough* amgprodz \*cough cough*
+# Phant0m0565's Bio
+its my bio, inspired partially by [above.gay](https://above.gay/), editted substancially
+logo was made in Procreate made to look similar to the Vencord style logo
