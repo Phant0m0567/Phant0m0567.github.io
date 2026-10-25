@@ -50,6 +50,7 @@ declare module 'vue' {
     IconSimpleIconsRadixui: typeof import('~icons/simple-icons/radixui')['default']
     IconSimpleIconsReact: typeof import('~icons/simple-icons/react')['default']
     IconSimpleIconsRedis: typeof import('~icons/simple-icons/redis')['default']
+    IconSimpleIconsRoblox: typeof import('~icons/simple-icons/roblox')['default']
     IconSimpleIconsSqlite: typeof import('~icons/simple-icons/sqlite')['default']
     IconSimpleIconsSteam: typeof import('~icons/simple-icons/steam')['default']
     IconSimpleIconsTailwindcss: typeof import('~icons/simple-icons/tailwindcss')['default']

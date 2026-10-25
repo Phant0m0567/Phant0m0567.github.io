@@ -53,9 +53,18 @@
             </div>
             <icon-lucide-external-link class="contact-arrow" />
           </a>
+          <a href="https://steamcommunity.com/id/Phant0m0565Alt" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <icon-simple-icons-steam class="contact-icon" />
+            <div class="contact-info">
+              <span class="contact-label">Steam (Alt)</span>
+              <span class="contact-value">Phant0m0565Alt</span>
+            </div>
+            <icon-lucide-external-link class="contact-arrow" />
+          </a>
         </div>
       </div>
     </div>
+    <br />
   </div>
 </template>
 
