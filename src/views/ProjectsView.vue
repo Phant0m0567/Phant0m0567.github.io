@@ -33,8 +33,8 @@
           <div class="image-fade" />
         </div>
         <div class="project-info">
-          <h2>Phant0m0567.github.io</h2>
-          <p>My portfolio, hosted on Github Pages. Forked from above's portfolio and editted substancially</p>
+          <h2>Phant0m0565.pages.dev</h2>
+          <p>My portfolio, hosted on Cloudflare Pages. Forked from abovescore's portfolio and editted alot</p>
           <div class="project-footer">
             <div class="project-icons">
               <icon-simple-icons-nodedotjs />
@@ -42,7 +42,7 @@
               <icon-simple-icons-vite />
               <icon-simple-icons-typescript />
             </div>
-            <a href="https://phant0m0567.github.io/" target="_blank" rel="noopener noreferrer" class="visit-btn mono">
+            <a href="https://phant0m0565.pages.dev/" target="_blank" rel="noopener noreferrer" class="visit-btn mono">
               <icon-lucide-external-link class="visit-icon" />
               visit
             </a>
