@@ -23,10 +23,10 @@ function copyCode() {
           from the United States.<br />
           I primarily work in the UBG community, and I'm decently known.<br />
           I use MacOS Tahoe as my primary operating system, my favorite language is CSS, aswell as HTML and JS.<br />
-          I own 2 proxies, and I own Global Unblocking², I also work as a developer for some other proxies too.<br>
+          I own 2 sites, and I own Global Unblocking², I work as a developer for some other sites aswell.<br>
           You can find some of my projects
           <RouterLink to="/projects">here.</RouterLink><br />
-          You can also join my server (please do) <a href="https://discord.gg/bMeRzKXT5r" target="_blank">here.</a>
+          You can also join my server <a href="https://discord.gg/bMeRzKXT5r" target="_blank">here.</a>
         </p>
       </div>
     </div>
