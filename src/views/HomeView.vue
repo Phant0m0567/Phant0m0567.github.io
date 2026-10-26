@@ -2,7 +2,7 @@
 import { ref, onMounted, onUnmounted } from "vue";
 
 
-const embedCode = `<a href="https://phant0m0567.github.io/" target="_blank"><img src="https://phant0m0567.github.io/88x31.gif" alt="phant0m0567.github.io" /></a>`
+const embedCode = `<a href="https://phant0m0565.github.io/" target="_blank"><img src="https://phant0m0565.pages.dev/88x31.gif" alt="phant0m0565.github.io" /></a>`
 const copied = ref(false)
 
 function copyCode() {
