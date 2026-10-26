@@ -78,7 +78,7 @@
         </div>
         <div class="project-info">
           <h2>Aurelium</h2>
-          <p>my UBG proxy site, has over 1.5k games, a proxy, a chatbot, and an unblocked youtube player. (still in development)</p>
+          <p>my UBG proxy site, has over 1.5k games, a proxy, a chatbot, and an unblocked youtube player.</p>
           <div class="project-footer">
             <div class="project-icons">
               <icon-simple-icons-html5 />
