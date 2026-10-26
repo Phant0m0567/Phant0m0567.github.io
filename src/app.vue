@@ -50,13 +50,14 @@ document.addEventListener("DOMContentLoaded", () => {
 .app-container {
   min-height: 100vh;
   display: grid;
-  place-items: center;
+  place-items: start center;
   padding: 0;
 }
 
 .primary-container {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
+  box-sizing: border-box;
   z-index: 1;
   max-width: 896px;
   border-bottom: 0;
