@@ -18,11 +18,11 @@
             <icon-lucide-external-link class="contact-arrow" />
           </a>
 
-          <a href="mailto:aurelium.support@gmail.com" class="contact-item">
+          <a href="mailto:phant0m0565@proton.me" class="contact-item">
             <icon-lucide-mail class="contact-icon" />
             <div class="contact-info">
               <span class="contact-label">Email</span>
-              <span class="contact-value">aurelium.support@gmail.com</span>
+              <span class="contact-value">phant0m0565@proton.me</span>
             </div>
             <icon-lucide-external-link class="contact-arrow" />
           </a>
