@@ -1,7 +1,6 @@
 ---
 title: Welcome to Starlight
 description: Get started building your docs site with Starlight.
-template: splash
 hero:
   tagline: Congrats on setting up a new Starlight project!
   image:
@@ -25,8 +24,8 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		Edit `src/content/docs/index.mdx` to see this page change.
 	</Card>
 	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
+		Starlight displays the sidebar by default. Add `template: splash` to a
+		page's frontmatter to hide it.
 	</Card>
 	<Card title="Add new content" icon="add-document">
 		Add Markdown or MDX files to `src/content/docs` to create new pages.

@@ -1,0 +1,71 @@
+19:48:25 [vite] connected.
+19:48:25 [types] Generated 1ms
+19:48:26 [vite] connected.
+19:48:26 [content] Syncing content
+19:48:26 [content] Astro config changed
+19:48:26 [content] Clearing content store
+19:48:26 [content] Synced content
+ astro  v7.4.11 ready in 2386 ms
+┃ Local    http://localhost:4321/
+┃ Network  use --host to expose
+19:48:26 watching for file changes...
+19:48:29 [WARN] [content] The collection "i18n" does not exist or is empty. Please check your content config file for errors.
+19:48:29 [200] / 213ms
+19:52:33 [200] / 19ms
+19:52:37 [200] /_image 1506ms
+19:53:11 [200] / 15ms
+19:53:12 [200] /_image 130ms
+19:53:52 [200] / 10ms
+19:55:29 [starlight-docs-loader] Reloaded data from index.mdx
+19:55:30 [WARN] [content] The collection "i18n" does not exist or is empty. Please check your content config file for errors.
+19:55:30 [200] / 126ms
+19:59:51 [200] / 16ms
+19:59:54 [200] /guides/example/ 14ms
+20:00:15 [starlight-docs-loader] Reloaded data from index.mdx
+20:01:47 [WARN] [content] The collection "i18n" does not exist or is empty. Please check your content config file for errors.
+20:01:47 [200] / 111ms
+20:01:48 [200] /_image 126ms
+20:01:48 [200] / 11ms
+20:03:39 [200] /guides/example/ 13ms
+20:03:40 [200] /guides/example/ 12ms
+20:03:44 [200] /reference/example/ 12ms
+20:03:47 [200] /reference/example/ 13ms
+20:03:48 [200] /guides/example/ 12ms
+20:03:49 [200] /guides/example/ 12ms
+20:03:51 [200] /reference/example/ 18ms
+20:03:51 [200] /reference/example/ 16ms
+20:03:52 [200] / 11ms
+20:03:53 [200] / 9ms
+20:04:22 [200] /reference/example/ 19ms
+20:04:25 [200] / 8ms
+20:04:25 [200] / 8ms
+20:04:25 [200] /_image 88ms
+20:04:37 [200] /guides/example/ 14ms
+20:04:48 [200] / 10ms
+20:04:49 [200] /_image 127ms
+20:07:17 [200] / 9ms
+20:07:40 [200] / 10ms
+20:07:57 [200] / 9ms
+20:24:36 [200] / 28ms
+20:48:44 [200] / 86ms
+20:48:45 [200] /_image 130ms
+20:51:56 [200] / 10ms
+20:51:58 [200] /_image 132ms
+20:57:55 Configuration file updated. Restarting...
+20:57:55 [starlight-docs-loader] Reloaded data from index.mdx
+20:57:56 [starlight-docs-loader] Reloaded data from projects/solaris-v2.mdx
+20:57:56 [vite] connected.
+20:57:56 [vite] connected.
+20:57:56 [vite] server restarted.
+20:57:57 [content] Syncing content
+20:57:58 [content] Synced content
+20:58:02 [WARN] [content] The collection "i18n" does not exist or is empty. Please check your content config file for errors.
+20:58:03 [200] / 588ms
+20:58:03 [200] / 588ms
+20:58:04 [200] / 35ms
+21:00:15 [200] /guides/example/ 17ms
+21:00:16 [200] /reference/example/ 14ms
+21:00:24 [200] /projects/solaris-v2/ 30ms
+21:00:24 [200] /projects/solaris-v2/ 12ms
+21:00:26 [200] /reference/example/ 12ms
+21:09:16 [200] /projects/solaris-v2/ 19ms

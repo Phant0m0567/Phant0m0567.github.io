@@ -60,6 +60,10 @@ export default defineConfig({
 					],
 				},
 				{
+					label: 'Projects',
+					items: [{ label: 'Solaris V2', slug: 'projects/solaris-v2' }],
+				},
+				{
 					label: 'Reference',
 					items: [{ autogenerate: { directory: 'reference' } }],
 				},
