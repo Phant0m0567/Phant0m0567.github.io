@@ -46,6 +46,12 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'My Docs',
+			customCss: ['./src/custom.css'],
+			components: {
+				Head: './src/components/Head.astro',
+				Header: './src/components/Header.astro',
+				Sidebar: './src/components/Sidebar.astro',
+			},
 			locales,
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/phant0m0567/phant0m0567.github.io/' },
@@ -60,8 +66,8 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'Projects',
-					items: [{ label: 'Solaris V2', slug: 'projects/solaris-v2' }],
+					label: 'Welcome',
+					items: [{ autogenerate: { directory: 'projects/solaris-v2' } }],
 				},
 				{
 					label: 'Reference',

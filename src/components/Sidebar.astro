@@ -1,0 +1,21 @@
+---
+import MobileMenuFooter from 'virtual:starlight/components/MobileMenuFooter';
+import SidebarPersister from '@astrojs/starlight/components/SidebarPersister.astro';
+import SidebarSublist from '@astrojs/starlight/components/SidebarSublist.astro';
+
+const { entry, sidebar } = Astro.locals.starlightRoute;
+const isSolarisPage =
+	entry.id === 'projects/solaris-v2' || entry.id.startsWith('projects/solaris-v2/');
+const welcomeGroup = sidebar.find((item) => item.type === 'group' && item.label === 'Welcome');
+const visibleSidebar = isSolarisPage
+	? welcomeGroup
+		? [welcomeGroup]
+		: []
+	: sidebar.filter((item) => item.type !== 'group' || item.label !== 'Welcome');
+---
+
+{isSolarisPage && <span class="solaris-v2-docs" hidden aria-hidden="true" />}
+
+<SidebarPersister><SidebarSublist sublist={visibleSidebar} /></SidebarPersister>
+
+<div class="md:sl-hidden"><MobileMenuFooter /></div>

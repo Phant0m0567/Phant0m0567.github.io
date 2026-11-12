@@ -1,0 +1,41 @@
+body:has(.solaris-v2-docs) .site-title {
+	align-items: center;
+	gap: 6px;
+}
+
+body:has(.solaris-v2-docs) .site-title::before {
+	content: '';
+	display: block;
+	align-self: center;
+	flex: 0 0 30px;
+	width: 30px;
+	height: 28px;
+	transform: translateY(-2px);
+	background-image: url('/solaris-v2-icon.png');
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: auto 28px;
+	white-space: nowrap;
+}
+
+body:has(.solaris-v2-docs) .site-title > span[translate="no"] {
+	display: none;
+}
+
+body:has(.solaris-v2-docs) .site-title::after {
+	content: 'DOCS';
+	display: block;
+	align-self: center;
+	width: 82px;
+	height: 33px;
+	color: transparent;
+	background-color: var(--sl-color-text-accent);
+	-webkit-mask-image: url('/solaris-v2-docs.svg');
+	mask-image: url('/solaris-v2-docs.svg');
+	-webkit-mask-position: center;
+	mask-position: center;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+}
