@@ -67,7 +67,11 @@ export default defineConfig({
 				},
 				{
 					label: 'Welcome',
-					items: [{ autogenerate: { directory: 'projects/solaris-v2' } }],
+					items: [{ label: 'Why Solaris?', slug: 'projects/solaris-v2/why-solaris' }],
+				},
+				{
+					label: 'Install Solaris',
+					items: [{ label: 'Installation', slug: 'projects/solaris-v2/installation' }],
 				},
 				{
 					label: 'Reference',

@@ -6,12 +6,11 @@ import SidebarSublist from '@astrojs/starlight/components/SidebarSublist.astro';
 const { entry, sidebar } = Astro.locals.starlightRoute;
 const isSolarisPage =
 	entry.id === 'projects/solaris-v2' || entry.id.startsWith('projects/solaris-v2/');
-const welcomeGroup = sidebar.find((item) => item.type === 'group' && item.label === 'Welcome');
+const isSolarisSection = (item) =>
+	item.type === 'group' && ['Welcome', 'Install Solaris'].includes(item.label);
 const visibleSidebar = isSolarisPage
-	? welcomeGroup
-		? [welcomeGroup]
-		: []
-	: sidebar.filter((item) => item.type !== 'group' || item.label !== 'Welcome');
+	? sidebar.filter(isSolarisSection)
+	: sidebar.filter((item) => !isSolarisSection(item));
 ---
 
 {isSolarisPage && <span class="solaris-v2-docs" hidden aria-hidden="true" />}

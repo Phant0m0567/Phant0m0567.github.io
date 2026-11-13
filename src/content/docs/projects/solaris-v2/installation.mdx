@@ -1,0 +1,94 @@
+---
+title: Install Solaris
+description: Clone Solaris V2 and run it locally.
+---
+
+import { Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+
+The easiest way to install Solaris into your repo/directory is with a CLI command, it will clone the repo into your project, in a specified folder, and you can use its code through there.
+
+You can either follow the [automatic installation](#install-from-github), or the manual installation which will take longer.
+
+:::tip[Online Preview]
+Want to preview the code in your browser? Visit our [GitHub repo](https://github.com/phant0m0567/solaris-v2) to look through the code, without ever leaving your browser.
+:::
+
+## Requirements
+
+- **Node.js** - Version `20.19.0` or later in the recommended.
+- **Terminal** - Required to run the commands below.
+- **Text editor** - We recommend [VS Code](https://code.visualstudio.com/download) or [JetBrains](https://www.jetbrains.com/help/idea/installation-guide.html#requirements).
+
+## Install from GitHub
+
+Follow these steps to download Solaris V2 and start it on your machine.
+
+<Steps>
+
+1. Clone the Solaris V2 repository.
+
+   ```sh
+   git clone https://github.com/Phant0m0567/Solaris-V2.git
+   ```
+
+2. Change into the project directory.
+
+   ```sh
+   cd Solaris-V2
+   ```
+
+3. Install the project dependencies.
+
+   <Tabs syncKey="package-manager">
+     <TabItem label="npm">
+
+     ```sh
+     npm install
+     ```
+
+     </TabItem>
+     <TabItem label="pnpm">
+
+     ```sh
+     pnpm install
+     ```
+
+     </TabItem>
+     <TabItem label="Yarn">
+
+     ```sh
+     yarn install
+     ```
+
+     </TabItem>
+   </Tabs>
+
+4. Start the development server.
+
+   <Tabs syncKey="package-manager">
+     <TabItem label="npm">
+
+     ```sh
+     npm run dev
+     ```
+
+     </TabItem>
+     <TabItem label="pnpm">
+
+     ```sh
+     pnpm run dev
+     ```
+
+     </TabItem>
+     <TabItem label="Yarn">
+
+     ```sh
+     yarn dev
+     ```
+
+     </TabItem>
+   </Tabs>
+
+   Open the local URL printed by Vite in your browser.
+
+</Steps>

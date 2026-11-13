@@ -2,4 +2,12 @@
 import StarlightHeader from '@astrojs/starlight/components/Header.astro';
 ---
 
-<StarlightHeader transition:persist="starlight-header" />
+<div class="persistent-header" transition:persist="starlight-header">
+	<StarlightHeader />
+</div>
+
+<style>
+	.persistent-header {
+		display: contents;
+	}
+</style>

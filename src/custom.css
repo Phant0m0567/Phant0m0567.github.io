@@ -39,3 +39,18 @@ body:has(.solaris-v2-docs) .site-title::after {
 	-webkit-mask-size: contain;
 	mask-size: contain;
 }
+
+body:has(.solaris-v2-docs) .pagination-links:has(> a:only-child) {
+	display: flex;
+	justify-content: flex-end;
+}
+
+body:has(.solaris-v2-docs) .pagination-links:has(> a:only-child) > a {
+	flex: 0 1 calc(50% - 0.5rem);
+}
+
+@media (max-width: 50rem) {
+	body:has(.solaris-v2-docs) .pagination-links:has(> a:only-child) > a {
+		flex: 1 1 100%;
+	}
+}
