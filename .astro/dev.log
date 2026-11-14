@@ -3836,3 +3836,12 @@ Possible dynamic routes being matched: node_modules/@astrojs/starlight/dist/rout
 [2m20:10:57[22m [34m[200][39m /projects/solaris-v2/installation [2m365ms[22m
 [2m20:10:57[22m [34m[200][39m /projects/solaris-v2/installation/ [2m383ms[22m
 [2m20:12:17[22m [34m[starlight-docs-loader][39m Reloaded data from [32mprojects/solaris-v2/installation.mdx[39m
+[33m[1m20:12:18[22m [WARN] [content][39m The collection "i18n" does not exist or is empty. Please check your content config file for errors.
+[2m20:12:18[22m [34m[200][39m /projects/solaris-v2/installation [2m199ms[22m
+[2m20:12:18[22m [34m[200][39m /projects/solaris-v2/installation/ [2m185ms[22m
+[2m20:12:27[22m [34m[200][39m /projects/solaris-v2/why-solaris/ [2m25ms[22m
+[2m20:12:27[22m [34m[200][39m /projects/solaris-v2/why-solaris/ [2m38ms[22m
+[2m20:12:28[22m [34m[200][39m / [2m150ms[22m
+[2m20:12:29[22m [34m[200][39m / [2m92ms[22m
+[2m08:07:59[22m [34m[starlight-docs-loader][39m Reloaded data from [32mprojects/solaris-v2/installation.mdx[39m
+[2m08:08:02[22m [34m[starlight-docs-loader][39m Reloaded data from [32mprojects/solaris-v2/installation.mdx[39m
